@@ -16,7 +16,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Calculo da Media"
+        android:text="@string/calculo_da_media"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nota1"
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginStart="24dp"
@@ -34,15 +34,15 @@
         android:layout_marginRight="24dp"
         android:background="#D8D6D6"
         android:ems="10"
-        android:hint="Nota 1"
+        android:hint="@string/nota_1"
         android:inputType="textPersonName"
-        android:padding="10"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/nota2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -52,16 +52,16 @@
         android:layout_marginRight="24dp"
         android:background="#D8D6D6"
         android:ems="10"
-        android:hint="Nota 2"
+        android:hint="@string/nota_2"
         android:inputType="textPersonName"
-        android:padding="10"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/nota1" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/faltas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -71,12 +71,44 @@
         android:layout_marginRight="24dp"
         android:background="#D8D6D6"
         android:ems="10"
-        android:hint="Faltas"
+        android:hint="@string/faltas"
         android:inputType="textPersonName"
-        android:padding="10"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/nota2" />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/calcular"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#3F51B5"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_calcular" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
